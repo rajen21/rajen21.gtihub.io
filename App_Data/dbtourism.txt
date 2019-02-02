@@ -1,0 +1,129 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Mar 14, 2018 at 11:00 AM
+-- Server version: 5.0.37
+-- PHP Version: 5.2.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `dbtourism`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tourism_admin`
+-- 
+
+CREATE TABLE `tourism_admin` (
+  `uid` int(11) NOT NULL auto_increment,
+  `uname` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+-- 
+-- Dumping data for table `tourism_admin`
+-- 
+
+INSERT INTO `tourism_admin` (`uid`, `uname`, `password`) VALUES 
+(1, 'admin', 'ADMIN'),
+(2, 'rajan', '123'),
+(5, 'jkl', 'rrrrrrr');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tourism_country`
+-- 
+
+CREATE TABLE `tourism_country` (
+  `cid` int(11) NOT NULL auto_increment,
+  `cname` varchar(50) NOT NULL,
+  PRIMARY KEY  (`cid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+
+-- 
+-- Dumping data for table `tourism_country`
+-- 
+
+INSERT INTO `tourism_country` (`cid`, `cname`) VALUES 
+(12, 'Singapore'),
+(13, 'Thailand'),
+(14, 'Malaysia'),
+(15, 'klklll');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tourism_near_by_hotels`
+-- 
+
+CREATE TABLE `tourism_near_by_hotels` (
+  `hid` int(11) NOT NULL auto_increment,
+  `name` varchar(100) NOT NULL,
+  `description` text NOT NULL,
+  `contactinfo` text NOT NULL,
+  `place_id` int(11) NOT NULL,
+  PRIMARY KEY  (`hid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+-- 
+-- Dumping data for table `tourism_near_by_hotels`
+-- 
+
+INSERT INTO `tourism_near_by_hotels` (`hid`, `name`, `description`, `contactinfo`, `place_id`) VALUES 
+(6, 'Pan Pacific Singapore', '5 star Hotel', '1234567890', 17);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tourism_place`
+-- 
+
+CREATE TABLE `tourism_place` (
+  `place_id` int(11) NOT NULL auto_increment,
+  `name` varchar(100) NOT NULL,
+  `description` text NOT NULL,
+  `opening_hours` text NOT NULL,
+  `lat` varchar(10) NOT NULL,
+  `lng` varchar(10) NOT NULL,
+  `contact_info` text NOT NULL,
+  `cid` int(11) NOT NULL,
+  PRIMARY KEY  (`place_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+-- 
+-- Dumping data for table `tourism_place`
+-- 
+
+INSERT INTO `tourism_place` (`place_id`, `name`, `description`, `opening_hours`, `lat`, `lng`, `contact_info`, `cid`) VALUES 
+(17, 'Garden by the bay', 'zzaaa', '11:12', '112', '3321', '1234569870', 12),
+(18, 'Grand palace', 'pldjjhana', '01:00', '6544', '65654', '9871234560', 13),
+(19, 'batu caves', 'pplsfdkk', '00:00', '1235', '632', '6541237890', 14);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tourism_place_image`
+-- 
+
+CREATE TABLE `tourism_place_image` (
+  `pimgid` int(11) NOT NULL auto_increment,
+  `photos` varchar(100) NOT NULL,
+  `place_id` int(11) NOT NULL,
+  PRIMARY KEY  (`pimgid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+-- 
+-- Dumping data for table `tourism_place_image`
+-- 
+
+INSERT INTO `tourism_place_image` (`pimgid`, `photos`, `place_id`) VALUES 
+(9, 'skate31.jpg', 17),
+(10, 'itm_rajen2014-01-04_12-22-25_.jpg', 18),
+(11, 'itm_rajen2013-10-28_04-35-04_.jpg', 19);

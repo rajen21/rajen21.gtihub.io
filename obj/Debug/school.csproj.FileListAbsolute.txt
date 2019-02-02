@@ -1,0 +1,4 @@
+c:\users\dell-3546\documents\visual studio 2010\Projects\school\school\bin\school.dll
+c:\users\dell-3546\documents\visual studio 2010\Projects\school\school\bin\school.pdb
+c:\users\dell-3546\documents\visual studio 2010\Projects\school\school\obj\Debug\school.dll
+c:\users\dell-3546\documents\visual studio 2010\Projects\school\school\obj\Debug\school.pdb

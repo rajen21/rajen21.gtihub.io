@@ -1,0 +1,12 @@
+c:\users\dell-3546\documents\visual studio 2010\Projects\Newproject\Newproject\bin\Newproject.dll
+c:\users\dell-3546\documents\visual studio 2010\Projects\Newproject\Newproject\bin\Newproject.pdb
+c:\users\dell-3546\documents\visual studio 2010\Projects\Newproject\Newproject\obj\Debug\Newproject.dll
+c:\users\dell-3546\documents\visual studio 2010\Projects\Newproject\Newproject\obj\Debug\Newproject.pdb
+D:\aspnet\Newproject\Newproject\bin\Newproject.dll
+D:\aspnet\Newproject\Newproject\bin\Newproject.pdb
+D:\aspnet\Newproject\Newproject\obj\Debug\Newproject.dll
+D:\aspnet\Newproject\Newproject\obj\Debug\Newproject.pdb
+C:\Users\Dell-3546\Desktop\Newproject\Newproject\bin\Newproject.dll
+C:\Users\Dell-3546\Desktop\Newproject\Newproject\bin\Newproject.pdb
+C:\Users\Dell-3546\Desktop\Newproject\Newproject\obj\Debug\Newproject.dll
+C:\Users\Dell-3546\Desktop\Newproject\Newproject\obj\Debug\Newproject.pdb
